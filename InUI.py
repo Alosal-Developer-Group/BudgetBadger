@@ -8,9 +8,12 @@ def UIfrontend():
     if input() == "1":
         print("1 - I received money")
         print("2 - I spent or lost money")
-        if input == "1":
+        if input() == "1":
             editbudget("GAIN")
         else:
             editbudget("LOSS")
     else:
         readbudget()
+
+
+UIfrontend()

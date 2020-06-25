@@ -1,8 +1,19 @@
 import os
 
 
-def MathEngine():
-    pass
+def MathEngine(editstatus):
+    if editstatus == "LOSS":
+        f = open("currentbudget.dll", "r")
+        currentbudget = f.read()
+        f.close()
+        mathout = currentbudget - LOSS
+        outUImath(mathout)
+    else:
+        f = open("currentbudget.dll", "r")
+        currentbudget = f.read()
+        f.close()
+        mathout = currentbudget + GAIN
+        outUImath(mathout)
 
 
 def DirEngine():
