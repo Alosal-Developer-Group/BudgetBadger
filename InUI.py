@@ -16,4 +16,5 @@ def UIfrontend():
         readbudget()
 
 
+DirEngine()
 UIfrontend()

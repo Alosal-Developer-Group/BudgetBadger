@@ -3,9 +3,8 @@ from api.engine import *
 
 def editbudget(editstatus):
     if editstatus == "GAIN":
-        GAIN = input('How much did you make?')
         def gaintry():
-            global GAIN
+            GAIN = input('How much did you make?')
             try:
                 VARCHECK = int(GAIN)
 
@@ -15,12 +14,12 @@ def editbudget(editstatus):
                 print("Conversion failed, Please do not include anything but numerical characters (exclude $ or %, etc)")
                 input()
                 gaintry()
+        gaintry()
 
 
     else:
-        LOSS = input('How much did you lose/spend?')
         def losstry():
-            global LOSS
+            LOSS = input('How much did you lose/spend?')
             try:
                 VARCHECK = int(LOSS)
 
@@ -28,7 +27,9 @@ def editbudget(editstatus):
                 MathEngine("LOSS", int(LOSS))
             except:
                 print("Conversion failed, Please do not include anything but numerical characters (exclude $ or %, etc)")
+                input()
                 losstry()
+        losstry()
 
 
 def readbudget():
