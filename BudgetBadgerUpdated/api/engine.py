@@ -14,6 +14,7 @@ def MathEngine(value):
 def DirEngine():
     try:
         path = dir_back() + "\\BudgetBadgerUpdated\\Budget\\currentbudget.dll"
+        read_file(path)
     except:
         setup()
 
