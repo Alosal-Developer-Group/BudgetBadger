@@ -1,6 +1,5 @@
 from api import *
-# 3Debatable_Impeach_caiman_Mince7_Queasy_Sedge
-#efsghzsfgh
+
 
 def UIfrontend():
     print("1 - Edit Budget")
