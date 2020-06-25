@@ -10,7 +10,7 @@ def editbudget(editstatus):
 
                 # Here, I pass in the value of "Gain" to MathEngine
                 MathEngine("GAIN", int(GAIN))
-            except:
+            except Exception as e:
                 print("Conversion failed, Please do not include anything but numerical characters (exclude $ or %, etc)")
                 input()
                 gaintry()
