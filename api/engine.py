@@ -1,18 +1,22 @@
 import os
+from outUI import *
 
 
-def MathEngine(editstatus):
+# I added parameter "value". This parameter is to be edited.
+def MathEngine(editstatus, value):
     if editstatus == "LOSS":
         f = open("currentbudget.dll", "r")
         currentbudget = f.read()
         f.close()
-        mathout = currentbudget - LOSS
+
+        mathout = int(currentbudget) - value
         outUImath(mathout)
     else:
         f = open("currentbudget.dll", "r")
         currentbudget = f.read()
         f.close()
-        mathout = currentbudget + GAIN
+
+        mathout = currentbudget + value
         outUImath(mathout)
 
 
