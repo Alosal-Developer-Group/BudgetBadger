@@ -54,6 +54,4 @@ def edit_file(path, data, mode='w'):
 def setup():
     path = dir_back() + "\\BudgetBadgerUpdated\\Budget\\currentbudget.dll"
     os.mkdir(dir_back() + "\\BudgetBadgerUpdated\\Budget")
-    f = open(path, "w")
-    f.write(input("enter current budget"))
-    f.close()
+    edit_file(path, input('Enter your current budget: '))
