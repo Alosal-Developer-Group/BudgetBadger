@@ -11,6 +11,7 @@ def UIfrontend():
 
         else:
             readbudget()
+        print(' ') # This is to give some space between the UIFrontends
 
 
 DirEngine()

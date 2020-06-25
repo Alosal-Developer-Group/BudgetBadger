@@ -20,4 +20,6 @@ def editbudget():
 
 
 def readbudget():
-    pass
+    path = dir_back() + "\\BudgetBadgerUpdated\\Budget\\currentbudget.dll"
+    print(f'Your current budget is {read_file(path)}')
+
