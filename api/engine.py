@@ -16,11 +16,10 @@ def MathEngine(editstatus, value):
 
     if editstatus == "LOSS":
         mathout = int(currentbudget) - value
-        outUImath(mathout)
     else:
-
         mathout = int(currentbudget) + value
-        outUImath(mathout)
+
+    outUImath(mathout)
 
 
 def DirEngine():
