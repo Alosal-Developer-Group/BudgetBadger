@@ -1,1 +1,3 @@
 # BudgetBadger
+
+A Budget Manager.
