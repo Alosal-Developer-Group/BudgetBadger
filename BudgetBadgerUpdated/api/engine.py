@@ -14,7 +14,6 @@ def MathEngine(value):
 def DirEngine():
     try:
         path = dir_back() + "\\BudgetBadgerUpdated\\Budget\\currentbudget.dll"
-
     except:
         setup()
 
@@ -52,8 +51,7 @@ def edit_file(path, data, mode='w'):
 
 
 def setup():
-    os.mkdir("Budget")
-    os.chdir("Budget")
-    f = open("currentbudget.dll", "w")
+    path = dir_back() + "\\BudgetBadgerUpdated\\Budget\\currentbudget.dll"
+    f = open(path, "w")
     f.write(input("enter current budget"))
     f.close()
